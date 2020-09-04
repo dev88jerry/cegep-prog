@@ -21,6 +21,7 @@ public class ConversionTemperature {
         System.out.println("Convertisseur degres celsius et degres fahrenheit");
         System.out.println("-------------------------------------------------");
         char autreT;
+        
         do {
             System.out.println("Choisissez le mode de conversion : ");
             System.out.println("1 - Convertisseur Celsius - Fahrenheit");
@@ -36,12 +37,12 @@ public class ConversionTemperature {
             if (nbl == 1) {
                 conv = ((temp * 9.0) / 5.0) + 32.0;
                 String strDouble = String.format("%.2f", conv);
-                System.out.println(temp + " C correspond a : " + strDouble + " F.");
+                System.out.println(temp + "\u00B0" + " C correspond a : " + strDouble + "\u00B0" + " F.");
 
             } else if (nbl == 2) {
                 conv = (temp - 32.0) * 5.0 / 9.0;
                 String strDouble = String.format("%.2f", conv);
-                System.out.println(temp + " F correspond a : " + strDouble + " C.");
+                System.out.println(temp + "\u00B0" + " F correspond a : " + strDouble + "\u00B0" + " C.");
             }
 
             System.out.println("Souhaitez-vous convertir une autre tempterature ? (o/n)");
@@ -49,6 +50,8 @@ public class ConversionTemperature {
             autreT = nextT.next().charAt(0);
 
         } while (autreT != 'n');
+        
+        System.out.println("Au revoir!");
     }
 
 }
