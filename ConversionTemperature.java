@@ -20,8 +20,8 @@ public class ConversionTemperature {
         // TODO code application logic here
         System.out.println("Convertisseur degres celsius et degres fahrenheit");
         System.out.println("-------------------------------------------------");
-        char autreT;
-        
+        String inpS;
+
         do {
             System.out.println("Choisissez le mode de conversion : ");
             System.out.println("1 - Convertisseur Celsius - Fahrenheit");
@@ -47,10 +47,10 @@ public class ConversionTemperature {
 
             System.out.println("Souhaitez-vous convertir une autre tempterature ? (o/n)");
             Scanner nextT = new Scanner(System.in);
-            autreT = nextT.next().charAt(0);
+            inpS = nextT.next();
 
-        } while (autreT != 'n');
-        
+        } while (!inpS.equalsIgnoreCase("n"));
+
         System.out.println("Au revoir!");
     }
 
