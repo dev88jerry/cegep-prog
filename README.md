@@ -1,4 +1,5 @@
-# prog-lab1
-programming fall 2020 lab1
+# CEGEP 420-203-RE
 
-Short java program that converts temperatures, celcius to farenheit and vice versa.
+programming fall 2020 
+
+Developpment de programmes dans un environnement graphique
